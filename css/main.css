@@ -75,7 +75,7 @@ header .third p{font-size:18px}
 .portfolio h2{color:#fff}
 .portfolio p{font-size:20px;color:#fff}
 
-.repair{position:relative;background:linear-gradient( 360deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%)}
+.repair{position:relative;background:linear-gradient(360deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%)}
 .repair:before{content:url(../img/tools.png);position:absolute;z-index:1;top:-430px;right:-300px}
 .repair>div{position:relative;z-index:3}
 .repair p{font-size:20px}
@@ -111,6 +111,13 @@ header .third p{font-size:18px}
 .calculate p{font-size:16px}
 }
 
+.advantage h3{font-size:20px;color:#00db00}
+.advantage p{font-size:16px}
+@media (max-width:959px){
+.advantage h3{font-size:18px}
+.advantage p{font-size:14px}
+}
+
 .custom-radio>input+span{background:#fff;color:#000;font-size:22px;padding:12px 10px;cursor:pointer;display:inline-block}
 .custom-radio>input:checked+span{background:#000;color:#fff}
 
@@ -119,7 +126,7 @@ header .third p{font-size:18px}
 .uk-button-group.radio>*:last-child{border:none}
 
 .uk-tab::before{border-color:#d2d2d2}
-.uk-tab > li > a{font-size:18px;color:#000;border-color:#d2d2d2;text-transform:none;padding: 7px 0;}
+.uk-tab > li > a{font-size:18px;color:#000;border-color:#d2d2d2;text-transform:none;padding:7px 0}
 .uk-tab > .uk-active > a{color:#00db00;border-color:#00db00}
 
 /* Buttons */
