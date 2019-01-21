@@ -24,6 +24,10 @@ header .first .address{display:none}
 header .uk-logo{font-size:34px;margin:0}
 header .first .phone{font-size:18px}
 }
+@media (max-width:350px){
+header .uk-logo{font-size:28px}
+header .first .phone{font-size:16px}
+}
 
 header .second .uk-navbar-nav>li>a{min-height:auto;font-weight:600;font-size:21px;color:#fff;text-transform:none;padding:10px 23px}
 header .second .uk-navbar-nav>li>a>.uk-icon {margin:3px 0 -3px 7px}
@@ -118,6 +122,38 @@ header .third p{font-size:18px}
 .advantage p{font-size:14px}
 }
 
+.beforefooter{background:url(../img/backgrounds/beforefooter.jpg) no-repeat center / cover;padding:35px 0}
+.beforefooter h2{font-size:34px;line-height:40px;font-weight:normal}
+@media (max-width:1199px){
+.beforefooter h2{font-size:26px;line-height:34px}
+}
+@media (max-width:639px){
+.beforefooter h2{font-size:24px;line-height:30px}
+}
+
+footer{background:#272727}
+footer .uk-logo{font:100 40px 'Roboto',sans-serif;color:#fff;margin-right:10px}
+footer .first{padding:38px 0}
+footer .first .address{font-size:16px;color:#bebebe}
+footer .first .phone{font-size:22px;color:#e2e2e2}
+footer a{color:#e2e2e2}
+footer .uk-link-phone{margin-left:10px}
+footer .second{padding-bottom:50px}
+footer .second h3{font-weight:300;font-size:20px;color:#767676;text-transform:uppercase}
+footer .second a{font-size:16px}
+footer .second .uk-list > li:nth-child(n+2), footer .second .uk-list > li > ul {margin-top: 8px;}
+@media (max-width:959px){
+footer .first .set{flex:1;min-width:1px}
+}
+@media (max-width:639px){
+footer .uk-logo,footer .uk-link-phone{margin:0}
+footer .first,footer .second .uk-list,footer .second h3{text-align:center}
+}
+@media (max-width:439px){
+footer .uk-logo{font-size:34px}
+footer .first .phone{font-size:18px}
+}
+
 .custom-radio>input+span{background:#fff;color:#000;font-size:22px;padding:12px 10px;cursor:pointer;display:inline-block}
 .custom-radio>input:checked+span{background:#000;color:#fff}
 
@@ -153,6 +189,7 @@ header .third p{font-size:18px}
 
 /* Support */
 .phone-icon{vertical-align:middle;margin:-1px 9px 1px -1px}
+.uk-link-phone{font-size:18px;color:#e2e2e2;text-decoration:underline;padding-left:20px;background: url(../img/icons/phone_white.png) no-repeat left center}
 
 h1,h2,h3,h4,h5{font-family:'Roboto',sans-serif;font-weight:300;line-height:normal;margin:40px 0 25px;color:#000}
 h2{font-size:40px;line-height:50px}
