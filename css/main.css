@@ -78,7 +78,7 @@ header .third p{font-size:18px}
 .blocks_two .info{font-size:16px}
 }
 
-.blocks_three>div{overflow:hidden;border-radius:0 0 4px 4px;background:#fff;box-shadow:0px 0px 9.8px 0.2px rgba(55, 55, 55, 0.25)}
+.blocks_three>div{overflow:hidden;border-radius:0 0 4px 4px;background:#fff;box-shadow:0 0 9.8px .2px rgba(55,55,55,0.25)}
 .blocks_three img{width:100%}
 .blocks_three h3{font-size:20px;font-weight:500;line-height:normal;color:#00db00;margin:0 0 -2px}
 .blocks_three h3 span{font-weight:300;display:block}
@@ -93,10 +93,10 @@ header .third p{font-size:18px}
 .portfolio h2{color:#fff}
 .portfolio p{font-size:20px;color:#fff}
 
-.repair{position:relative;background:linear-gradient(360deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%)}
-.repair:before{content:url(../img/tools.png);position:absolute;z-index:1;top:-430px;right:-300px}
+.repair{position:relative;background:linear-gradient(360deg,#f0f0f0 0%,#fff 100%);padding-bottom:50px}
 .repair>div{position:relative;z-index:3}
 .repair p{font-size:20px}
+.repair.with-tool:before{content:url(../img/tools.png);position:absolute;z-index:1;top:-430px;right:-300px}
 @media (max-width:1199px){
 .repair:before{display:none}
 }
@@ -105,6 +105,24 @@ header .third p{font-size:18px}
 }
 @media (max-width:639px){
 .repair p{font-size:16px}
+}
+
+.smallgrey{position:relative;background:linear-gradient(360deg,#f0f0f0 0%,#fff 20%,#fff 100%);padding-bottom:50px;font-size:20px}
+.smallgrey h2{font-size:20px;line-height:normal;font-weight:400;color:#00db00}
+.smallgrey .uk-card{padding:20px 60px}
+.smallgrey .uk-card ul{font-size:16px}
+@media (max-width:1199px) and (min-width:960px){
+.smallgrey .uk-card{padding:20px}
+.smallgrey .uk-card ul{font-size:14px}
+}
+@media (max-width:959px){
+.smallgrey{font-size:18px}
+.smallgrey h1 br{display:none}
+.smallgrey .uk-card{padding:15px 45px}
+}
+@media (max-width:639px){
+.smallgrey{font-size:16px}
+.smallgrey .uk-card{padding:15px 25px}
 }
 
 .box-green{border:4px solid #0dc20d;background:#fff;padding:30px;position:relative;z-index:4;font-size:20px}
@@ -204,7 +222,7 @@ footer .first .phone{font-size:18px}
 .uk-button-grey{background:#282929;border:1px solid #848484;color:#fff;padding:0 10px;text-transform:none;border-radius:3px;font-size:16px;line-height:43px}
 .uk-button-grey:hover{background:#414141;color:#fff}
 .uk-button-white{background:#fff;color:#0dc20d;font-size:22px;text-transform:none}
-.uk-button-white:hover{background:rgb(228, 228, 228);color:#0dc20d}
+.uk-button-white:hover{background:#e4e4e4;color:#0dc20d}
 .uk-button-opacity{color:#fff;border:1px solid #898787;background:rgba(255,255,255,0.16);text-transform:none;font-size:18px;line-height:43px;padding:0 20px}
 .uk-button-opacity:hover{background:rgba(255,255,255,0.3);color:#fff}
 @media (max-width:639px){
@@ -222,10 +240,15 @@ h1,h2,h3,h4,h5{font-family:'Roboto',sans-serif;font-weight:300;line-height:norma
 h1{font-weight:400;font-size:50px}
 h2{font-size:40px;line-height:50px}
 h3{font-size:22px;font-weight:400;margin:30px 0 20px}
+@media (max-width:1199px){
+h1{font-size:43px}
+}
 @media (max-width:959px){
+h1{font-size:36px}
 h2{font-size:32px;line-height:38px}
 }
 @media (max-width:639px){
+h1{font-size:28px}
 h2{font-size:24px;line-height:30px}
 h3{font-size:20px}
 }
@@ -258,11 +281,11 @@ h3{font-size:20px}
 .uk-slider .uk-slidenav:not(.white){color:#fff;background:rgba(0,0,0,0.3);border-radius:100px;padding:10px 15px}
 .uk-slider .uk-slidenav.white{color:#fff}
 
-.badge{width:48px;height:48px;background:#deffde;position:relative;border-radius:100px;font-size:30px;color:#00db00;border:1px dashed #00db00;display:inline-block}
-.badge:hover{background:#00db00;border:1px solid #00db00;color:#fff}
+.badge-circle{width:48px;height:48px;background:#deffde;position:relative;border-radius:100px;font-size:30px;color:#00db00;border:1px dashed #00db00;display:inline-block}
+.badge-circle:hover,.uk-active>.badge-circle{background:#00db00;border:1px solid #00db00;color:#fff}
 
 .uk-table th{font-size:16px}
 .uk-table th,.uk-table td{text-transform:none;text-align:right}
 .uk-table th:first-child,.uk-table td:first-child{padding-left:0;text-align:left}
 .uk-table th:last-child,.uk-table td:last-child{padding-right:0}
-.uk-table-divider > :first-child > tr:not(:first-child), .uk-table-divider > :not(:first-child) > tr, .uk-table-divider > tr:not(:first-child){border:none;border-bottom: 1px solid #e5e5e5;}
+.uk-table-divider>:first-child>tr:not(:first-child), .uk-table-divider>:not(:first-child)>tr, .uk-table-divider>tr:not(:first-child){border:none;border-bottom:1px solid #e5e5e5}
